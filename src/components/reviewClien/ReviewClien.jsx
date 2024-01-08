@@ -5,7 +5,7 @@ import axios from 'axios'
 const ReviewClien = () => {
   const [reviews,setReviews] = useState([])
   const allReviews = async()=>{
-     const response = await axios.get('http://localhost:4001/api/v1/reviewCustomer');
+     const response = await axios.get('https://api-offs.onrender.com/api/v1/reviewCustomer');
      setReviews(response.data)
   }
 

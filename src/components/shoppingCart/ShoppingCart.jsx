@@ -7,7 +7,7 @@ const ShoppingCart = ({NbOrder,increment,decrement,OrderData,removeProduct}) => 
   const [address,setAdress]=useState("");
 
   console.log(OrderData)
-  const pricesArray = OrderData.map(product=>product.price);
+  const pricesArray = OrderData?.map(product=>product.price);
   const OrderSubTotal = pricesArray.reduce((accumulator,currentPrice)=>accumulator+currentPrice,0);
   const OrderTotal = OrderSubTotal+35;
 
@@ -54,7 +54,6 @@ const ShoppingCart = ({NbOrder,increment,decrement,OrderData,removeProduct}) => 
 
 	
  }
- console.log(valid);
 
   return (
 	<>

@@ -23,7 +23,7 @@ const Products = () => {
   
   const getProudcts = async()=>{
         try {
-            const response = await axios.get(`http://localhost:4001/api/v1/product`);
+            const response = await axios.get(`https://api-offs.onrender.com/api/v1/product`);
             setProducts(response.data)
             // setLoading(false)
         } catch (error) {

@@ -42,7 +42,7 @@ const Header = ({orderLenght}) => {
                 <div className="col-12">
                     <nav className="main-nav">
                         <Link to="index.html" className="logo">
-                            <img src="assets/images/logo.png" />
+                            <h3 style={{marginTop:"30px"}}>HAFEDshop</h3>
                         </Link>
                         <ul className="nav">
                             <li className="scroll-to-section">

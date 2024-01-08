@@ -8,7 +8,7 @@ import GetEmails from '../../components/getEmails/GetEmails'
 const Home = () => {
   const [products,setProducts] = useState([])
   const getProducts = async()=>{
-    const response = await axios.get(`http://localhost:4001/api/v1/product`);
+    const response = await axios.get(`https://api-offs.onrender.com/api/v1/product`);
     setProducts(response.data);
   }
   useState(()=>{

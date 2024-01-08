@@ -14,7 +14,7 @@ const SingleProduct = ({addToCart,OrderData,NbOrder,increment,decrement,product,
   const getProduct =async()=>{
     try {
         const response=await axios.get(
-            `http://localhost:4001/api/v1/product/${productId}`
+            `https://api-offs.onrender.com/api/v1/product/${productId}`
         );
         setProduct(response.data);
         setColor(response.data.defaultColor)
