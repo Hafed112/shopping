@@ -1,4 +1,3 @@
-import React from 'react'
 import "./bestoffer.css"
 const BestOffer = () => {
   return (
