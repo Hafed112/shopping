@@ -1,0 +1,29 @@
+.color-buttons {
+      display: flex;
+      gap: 10px;
+}
+
+.color-input {
+    position: absolute;
+    opacity: 0;
+}
+
+.color-label {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: inline-block;
+      border: 2px solid #fff; /* Border color */
+}
+
+.color-input:checked + .color-label {
+      border-width: 5px; /* Increase border width for the selected color */
+      border-color: gray;
+}
+
+.quantity{
+      background-color: hsl(0, 5%, 89%);
+      padding: 10px;
+      border-radius:10px;
+}

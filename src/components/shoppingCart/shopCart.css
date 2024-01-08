@@ -1,0 +1,70 @@
+.do {
+  padding: 100px;
+  background: #eecda3;
+  background: -webkit-linear-gradient(to right, #8f8a84, #141313);
+  background: linear-gradient(to right, #bcb6ae, #373134);
+  min-height: 100vh;
+} 
+
+.success-msg,
+.error-msg {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.error-msg {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+.success-msg {
+    color: #270;
+    background-color: #DFF2BF;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(42, 41, 41, 0.7);
+  transition: opacity 500ms;
+  visibility: visible;
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  margin-top: 300px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
